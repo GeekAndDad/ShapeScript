@@ -1,0 +1,6 @@
+language: swift
+osx_image: xcode11.4
+
+script:
+  - cd ShapeScript
+  - xcodebuild -scheme "ShapeScript Lib" -sdk macosx clean build test
